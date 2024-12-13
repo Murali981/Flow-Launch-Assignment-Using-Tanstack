@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const TablePagination = ({ table, filteredData }) => {

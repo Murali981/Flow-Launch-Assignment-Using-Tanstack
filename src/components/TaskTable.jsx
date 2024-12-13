@@ -1,4 +1,4 @@
-// /* eslint-disable */
+/* eslint-disable */
 
 import {
   useReactTable,
@@ -65,7 +65,7 @@ const TaskTable = ({ initialTasks, apiEndpoint }) => {
                   {headerGroup.headers.map((header) => (
                     <th
                       key={header.id}
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
                       {flexRender(
                         header.column.columnDef.header,

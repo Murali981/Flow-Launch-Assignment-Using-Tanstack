@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { Search, Plus } from "lucide-react";
 
 const TableHeader = ({

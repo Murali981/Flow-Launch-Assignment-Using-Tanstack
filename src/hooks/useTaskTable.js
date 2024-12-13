@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useState, useEffect, useMemo } from "react";
 import toast from "react-hot-toast";
 

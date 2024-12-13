@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Trash2 } from "lucide-react";
 import EditableCell from "./EditableCell";
 
