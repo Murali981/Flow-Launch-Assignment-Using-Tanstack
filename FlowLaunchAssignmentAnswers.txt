@@ -1,0 +1,22 @@
+1) How did you handle inline editing in the table ?
+
+Ans: I have created a custom EditableCell component that switches between display/edit mode on click. When editing, it shows either an input field or select dropdown (for status). When you click away (onBlur), it saves the changes.
+
+
+2) Explain how you fetched and processed the data from the dummy API ?
+
+Ans: I have used a simple fetch call to get data from jsonplaceholder API, then transformed each item to match our table structure (id, title, description, status). We handle this in fetchTasks function when the component mounts.
+
+3) What approach did you use to filter tasks based on status ?
+
+Ans: I have used TanStack's getFilteredRowModel along with a status dropdown. When you select a status, it filters the data using a useMemo hook that checks if the task status matches the selected filter.
+
+4) How did you manage the state of tasks when adding or editing them ?
+
+Ans: I have used a single tasks state and setTasks to manage all changes. When adding/editing, we update this state which automatically updates the table through TanStack Table's reactive system.
+
+5) What challenges did you face during development, and how did you overcome them ?
+
+Ans: The main challenge was understanding how to combine TanStack Table's built-in features with custom editing. We solved this by creating a custom EditableCell component and properly managing state updates after edits.
+
+
