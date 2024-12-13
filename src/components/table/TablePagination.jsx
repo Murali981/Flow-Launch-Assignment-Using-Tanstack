@@ -30,7 +30,7 @@ const TablePagination = ({ table, filteredData }) => {
         >
           <ChevronLeft size={20} />
         </button>
-        <span className="text-sm text-gray-600">
+        <span className="text-sm sm:leading-[10px] text-gray-600">
           Page {table.getState().pagination.pageIndex + 1} of{" "}
           {table.getPageCount()}
         </span>
